@@ -3,4 +3,6 @@ class Animal():
     
     def __init__(self, color):
         self.color
+    
+    def reproduction 
         
