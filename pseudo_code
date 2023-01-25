@@ -1,0 +1,39 @@
+PSEUDO CODE :
+
+
+	Classe Monde :
+- 
+- afficher_grille() -> print la grillle
+
+
+
+	Classe Animal
+- deplacement_thon(x_init, y_init) -> x_final, y_final
+	if grille[x][y] == 0:
+		nouvel_placement = grille[X][y] + 1
+	else:
+		placement
+
+	si cases vides, choose random, et il prends les nouveau coord
+	si pas de case vides, pas de déplacement, même coordonnées
+ - reproducion(compteur_action, requin.x_init, requin.y_init) -> compteur d'action , nouveau requin2.x_nit, requin2.y_init
+ 	tant que compteur_action >= 5 ET (deplcameent ou manger) alors nouveau requin et compteur_action = 0
+	
+		Classe Requin
+		
+ 	- manger(x_init, y_init, energie) -> x_final, y_final, energie
+ 		si coord requin == coord thon, objet thon delete ET energie +=2
+ 	- deplacement_requin(x_init, y_init) -> x_final, y_final :
+		si thon : il y va
+		si cases vides, choose random, et il prends les nouveau coord
+		si pas de case vides, pas de déplacement, même coordonnées
+	
+- case_nord(grille, x_init, y_init) -> cela retourne vide, requin, thon
+- case_sud((grille, x_init, y_init) -> cela retourne vide, requin, thon
+- case_est(grille, x_init, y_init) -> cela retourne vide, requin, thon
+- case_ouest(grille, x_init, y_init) -> cela retourne vide, requin, thon
+
+
+ 	
+ 	
+ 

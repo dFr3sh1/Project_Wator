@@ -56,14 +56,4 @@ class Animal:
  
          
 ma_grille = World()
-thon = Animal(ma_grille.grille, 5 , 5 , "T")
-thon.placer_animal()
-thon.deplacer_animal()
-ma_grille.affiche_grille()
-
-        
-
-
-
-
-    
+#ma_grille.affiche_grille()
