@@ -43,8 +43,12 @@ class Animal:
         self.grille[self.abscisse][self.ordonnee] = "R"  
          
         # modifie les coordonnées de l'animal
-        self.abscisse = rd.choice(list_abscisse_voisines_vide)
-        self.ordonnee = rd.choice(list_ordonnee_voisines_vide)
+        if len(list_abscisse_voisines_vide) > 0:
+            self.abscisse = rd.choice(list_abscisse_voisines_vide)
+        elif len(list_ordonnee_voisines_vide)>0 : 
+            self.ordonnee = rd.choice(list_ordonnee_voisines_vide)
+        self.grille[self.abscisse][self.ordonnee] = self.nom
+        #self.ordonnee = rd.choice(list_ordonnee_voisines_vide)
         
         
         
@@ -56,4 +60,7 @@ class Animal:
  
          
 ma_grille = World()
-#ma_grille.affiche_grille()
+thon = Animal(ma_grille.grille, 5 , 5 ,"T")
+thon.placer_animal()
+thon.deplacer_animal()
+ma_grille.affiche_grille()
