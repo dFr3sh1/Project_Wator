@@ -23,7 +23,8 @@ class Animal:
         while grid.grille[x][y]!= 0 :
             x = random.randint(0, len(grid.grille)-1)
             y = random.randint(0, len(grid.grille[0])-1)
-        grid.grille[x][y] = self.nom
+        grid.grille[x][y] = self.
+        
 
 
 thon = Animal("T")

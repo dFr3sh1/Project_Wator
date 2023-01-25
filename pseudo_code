@@ -9,6 +9,11 @@ PSEUDO CODE :
 
 	Classe Animal
 - deplacement_thon(x_init, y_init) -> x_final, y_final
+	if grille[x][y] == 0:
+		nouvel_placement = grille[X][y] + 1
+	else:
+		placement
+		
 	si cases vides, choose random, et il prends les nouveau coord
 	si pas de case vides, pas de déplacement, même coordonnées
  - reproducion(compteur_action, requin.x_init, requin.y_init) -> compteur d'action , nouveau requin2.x_nit, requin2.y_init
