@@ -3,9 +3,10 @@ class World:
         self.grille = [[0 for _ in range(nb_lines)] for _ in range(nb_colones)]
         
     def affiche_grille(self):
-        for elt in self.grille:
-            print(elt)
-        print()
+        for line in self.grille:
+            for elt in line:
+                print(elt, end='\t')
+            print()
         
 ma_grille = World()
-print(ma_grille.affiche_grille())
+#ma_grille.affiche_grille()
